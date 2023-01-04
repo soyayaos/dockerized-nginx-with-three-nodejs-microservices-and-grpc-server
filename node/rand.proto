@@ -12,5 +12,5 @@ message RandRequest {
 }
 
 message RandReply {
-  float rnd = 1;
+  int32 rnd = 1;
 }
