@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package rand;
+
+service Randomizer {
+  rpc SendRand (RandRequest) returns (RandReply) {}
+}
+
+message RandRequest {
+  int32 from = 1;
+  int32 to = 2;
+}
+
+message RandReply {
+  float rnd = 1;
+}
